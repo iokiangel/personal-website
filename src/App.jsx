@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import FrontPage from './navigation/front-page/FrontPage';
+import LandingPage from './navigation/front-page/LandingPage';
 
 class App extends React.PureComponent {
   render() {
     return (
       <div className="App">
-        <FrontPage />
+        <LandingPage />
       </div>
     );
   }
