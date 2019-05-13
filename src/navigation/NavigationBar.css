@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+.top-nav{
+    top: 0;
+    position: absolute;
+    cursor: default;
+    background-color: #f2f2f2;
+    overflow: hidden;
+    z-index: 10;
+    width: 100%;
+    border-bottom: .2rem solid lightblue;
+}
+
+.right-nav {
+    height: 100%;
+    float: right;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Playfair Display';
+}
+
+.right-nav:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.left-nav {
+    float: left;
+    color: #333;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Pacifico', 'Times New Roman', Times, serif;
+}
