@@ -1,9 +1,8 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 class NavigationBar extends React.PureComponent{
 
-    navigateTo = () =>{
+    navigateTo = (page) =>{
         switch(page){
             case 'home':
                 //todo nav to home
