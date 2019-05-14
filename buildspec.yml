@@ -13,7 +13,6 @@ phases:
             - yarn -v
             # Installing react and serverless dependencies
             - yarn install
-            - cd serverless && yarn install
     pre_build:
         commands:
             # Pulling the environment files from private bucket
