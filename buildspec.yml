@@ -1,8 +1,10 @@
-version: 0.2
-
+version: 0.1
 phases:
-    build:
-        commands:
-            # Building the react app and deploying to S3 bucket, invalidating the CloudFront
-            - npm install
-            - npm run build
+  pre_build:
+    commands:
+      - echo Installing source NPM dependencies...
+      - npm install
+  build:
+    commands:
+      - echo Build started on `date`
+      - npm run build
