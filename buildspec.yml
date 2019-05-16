@@ -6,7 +6,6 @@ phases:
       - npm install
   build:
     commands:
-      - echo Build started on `date`
-      - npm run build
-      - npm run deploy
+      - echo Build and Deploy started on `date`
+      - npm run build && aws s3 sync build/ s3://joshualopesm.com
       - echo Build has finished
