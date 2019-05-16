@@ -4,10 +4,6 @@ phases:
     build:
         commands:
             # Building the react app and deploying to S3 bucket, invalidating the CloudFront
+            - npm install
             - npm run build
             - npm run deploy
-artifacts:
-    files:
-        - serverless.yml
-    base-directory: 'serverless'
-    discard-paths: yes
