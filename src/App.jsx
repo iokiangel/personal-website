@@ -1,7 +1,7 @@
-import React from 'react';
-import './App.css';
-import LandingPage from './navigation/front-page/LandingPage';
-import NavigationBar from './navigation/NavigationBar';
+import React from "react";
+import "./App.css";
+import LandingPage from "./navigation/landing-page/LandingPage";
+import NavigationBar from "./navigation/NavigationBar";
 
 class App extends React.PureComponent {
   render() {
