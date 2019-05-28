@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Pacifico');
+
+.nav-menu {
+    float: right;
+    color: #333;
+    text-align: center;
+    padding: 1.15rem 1rem;
+    text-decoration: none;
+    font-size: 1.0625rem;
+    font-family: 'Merriweather';
+    padding: .875rem 1rem;
+    margin-right: 5rem;
+}
+
+.hover-override:hover {
+    background-color: none !important;
+}

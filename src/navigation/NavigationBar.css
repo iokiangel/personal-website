@@ -10,28 +10,9 @@
     z-index: 10;
     width: 100%;
     border-bottom: .2rem solid lightblue;
-    /* display: inline-block; */
-}
-
-.right-nav {
-    /* display: inline-block; */
-    float: right;
-    color: #333;
-    text-align: center;
-    padding: 1.15rem 1rem;
-    text-decoration: none;
-    font-size: 1.0625rem;
-    font-family: 'Merriweather';
-    margin-right: auto;
-}
-
-.right-nav:hover {
-    background-color: #ddd;
-    color: black;
 }
 
 .left-nav {
-    /* display: inline-block; */
     float: left;
     color: #333;
     text-align: left;
@@ -39,9 +20,4 @@
     text-decoration: none;
     font-size: 1.0625rem;
     font-family: 'Pacifico', 'Times New Roman', Times, serif;
-}
-
-.left-nav:hover {
-    background-color: #ddd;
-    color: black;
 }
