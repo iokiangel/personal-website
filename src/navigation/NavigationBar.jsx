@@ -1,22 +1,20 @@
 import React from 'react';
 import './NavigationBar.css';
 
-class NavigationBar extends React.PureComponent{
-    render(){
+class NavigationBar extends React.PureComponent {
+    render() {
         return (
-        <div className="top-nav">
-            <div className="left-nav">Joshua Lopes</div>
-            <div className="right-nav" onClick={() => NavigateTo('resume')}>Resume</div>
-            <div className="right-nav" onClick={() => NavigateTo('work')}>Work Experience</div>
-            <div className="right-nav" onClick={() => NavigateTo('tech')}>Tech Experience</div>
-            <div className="right-nav" onClick={() => NavigateTo('home')}>Home</div>
-        </div>
+            <div className="top-nav">
+                <div className="left-nav" onClick={() => NavigateTo('home')}> Joshua Lopes </div>
+                <div className="right-nav" onClick={() => NavigateTo('resume')}>Resume</div>
+                <div className="right-nav" onClick={() => NavigateTo('work')}>Work Experience</div>
+            </div>
         );
     }
 }
 
-function NavigateTo(page){
-    switch(page){
+function NavigateTo(page) {
+    switch (page) {
         case 'home':
             console.log('hello home');
             //todo nav to home
