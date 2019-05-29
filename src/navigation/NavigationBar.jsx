@@ -6,7 +6,7 @@ class NavigationBar extends React.Component {
     render() {
         return (
             <div className="top-nav">
-                <div className="left-nav" onClick={() => this.avigateTo('home')}> Joshua Lopes </div>
+                <div className="left-nav"> Joshua Lopes </div>
                 <NavMenu />
             </div>
         );

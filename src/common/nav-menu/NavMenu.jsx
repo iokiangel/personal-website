@@ -19,7 +19,7 @@ function NavMenu() {
     return (
         <div className="nav-menu">
             <Button
-                aria-owns={anchorEl ? 'simple-menu' : undefined}
+                aria-owns={anchorEl ? 'nav-menu' : undefined}
                 aria-haspopup="true"
                 onClick={handleClick}
             >
