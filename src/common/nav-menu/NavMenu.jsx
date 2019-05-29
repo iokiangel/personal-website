@@ -28,7 +28,7 @@ function NavMenu() {
             <Menu id="nav-menu" className="hover-override" anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={handleClose}>
                 <MenuItem onClick={handleClose}>Home</MenuItem>
                 <MenuItem onClick={handleClose}>Resume</MenuItem>
-                <MenuItem onClick={handleClose}>Work Experience</MenuItem>
+                <MenuItem onClick={handleClose}>Work History</MenuItem>
                 <MenuItem onClick={handleClose}>Tech Experience</MenuItem>
             </Menu>
         </div>

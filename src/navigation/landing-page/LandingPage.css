@@ -7,6 +7,7 @@
     display: block;
     position: relative;
     overflow: hidden;
+    z-index: 0;
 }
 .landing-image{
     width: 100%;
