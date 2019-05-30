@@ -26,7 +26,7 @@ const NavMenu = ({ setPage, activePage }) => {
             >
                 {activePage}
             </Button>
-            <Menu id="nav-menu" className="hover-override" anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={handleClose}>
+            <Menu id="nav-menu" className="hover-override" anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={() => setAnchorEl(null)}>
                 <MenuItem onClick={event => handleClose('Home')}>Home</MenuItem>
                 <MenuItem onClick={event => handleClose('Resume')}>Resume</MenuItem>
                 <MenuItem onClick={event => handleClose('Work')}>Work History</MenuItem>
