@@ -1,7 +1,7 @@
 import React from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
 import './Resume.css';
-import resume from '../../../static/resume/Resume.pdf';
+import resume from '../../../static/resume/JoshuaLopesResume.pdf';
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
@@ -37,6 +37,9 @@ class Resume extends React.Component {
                         )
                     }
                 </Document>
+                <a className="download-link" href="../../../static/resume/JoshuaLopesResume.pdf" download>
+                    Download Resume
+                </a>
             </div>
         );
     }

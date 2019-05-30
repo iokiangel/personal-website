@@ -4,7 +4,7 @@ import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import "./NavMenu.css";
 
-function NavMenu() {
+const NavMenu = ({ setPage, activePage }) => {
 
     const [anchorEl, setAnchorEl] = React.useState(null);
 
@@ -12,8 +12,9 @@ function NavMenu() {
         setAnchorEl(event.currentTarget);
     }
 
-    function handleClose() {
+    function handleClose(newPage) {
         setAnchorEl(null);
+        setPage(newPage)
     }
 
     return (
@@ -23,13 +24,13 @@ function NavMenu() {
                 aria-haspopup="true"
                 onClick={handleClick}
             >
-                Navigation
+                {activePage}
             </Button>
             <Menu id="nav-menu" className="hover-override" anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={handleClose}>
-                <MenuItem onClick={handleClose}>Home</MenuItem>
-                <MenuItem onClick={handleClose}>Resume</MenuItem>
-                <MenuItem onClick={handleClose}>Work History</MenuItem>
-                <MenuItem onClick={handleClose}>Tech Experience</MenuItem>
+                <MenuItem onClick={event => handleClose('Home')}>Home</MenuItem>
+                <MenuItem onClick={event => handleClose('Resume')}>Resume</MenuItem>
+                <MenuItem onClick={event => handleClose('Work')}>Work History</MenuItem>
+                <MenuItem onClick={event => handleClose('Tech')}>Tech Experience</MenuItem>
             </Menu>
         </div>
     );

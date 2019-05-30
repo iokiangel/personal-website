@@ -1,8 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
 .resume {
     z-index: 2;
     position: fixed;
-    top: 50%;
+    top:52%;
     left: 50%;
     /* bring your own prefixes */
     transform: translate(-50%, -50%);
+}
+
+.download-link {
+    font-family: 'Playfair Display', 'Times New Roman', Times, serif;
+    color: lightblue;
+    float: left;
 }
