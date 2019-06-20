@@ -24,8 +24,9 @@ const NavMenu = ({ setPage, activePage }) => {
                 aria-haspopup="true"
                 onClick={handleClick}
             >
-                {activePage}
+                {'▼' + activePage}
             </Button>
+            
             <Menu id="nav-menu" className="hover-override" anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={() => setAnchorEl(null)}>
                 <MenuItem onClick={event => handleClose('Home')}>Home</MenuItem>
                 <MenuItem onClick={event => handleClose('Resume')}>Resume</MenuItem>

@@ -3,6 +3,7 @@ import "./App.css";
 import LandingPage from "./navigation/landing-page/LandingPage";
 import NavigationBar from "./navigation/NavigationBar";
 import Resume from './navigation/dashboards/resume/Resume';
+import Home from './navigation/dashboards/home/Home';
 
 class App extends React.PureComponent {
   constructor(props) {
@@ -23,6 +24,7 @@ class App extends React.PureComponent {
       <div className="App">
         <NavigationBar activePage={this.state.activePage} setPage={this.setPage} />
         <LandingPage />
+        {this.state.activePage === 'Home' && <Home />}
         {this.state.activePage === 'Resume' && <Resume />}
       </div>
     );

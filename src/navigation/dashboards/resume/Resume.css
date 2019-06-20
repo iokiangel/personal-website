@@ -6,11 +6,12 @@
     top:52%;
     left: 50%;
     /* bring your own prefixes */
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -48%);
 }
 
 .download-link {
     font-family: 'Playfair Display', 'Times New Roman', Times, serif;
-    color: lightblue;
+    /* color: blue; */
     float: left;
+    font-weight: bold;
 }

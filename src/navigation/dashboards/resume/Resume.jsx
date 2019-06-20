@@ -21,6 +21,9 @@ class Resume extends React.Component {
 
         return (
             <div className="resume">
+                <a className="download-link" href="../../../static/resume/JoshuaLopesResume.pdf" download>
+                    Download Resume
+                </a>
                 <Document
                     file={file}
                     onLoadSuccess={this.onDocumentLoadSuccess}
@@ -37,9 +40,6 @@ class Resume extends React.Component {
                         )
                     }
                 </Document>
-                <a className="download-link" href="../../../static/resume/JoshuaLopesResume.pdf" download>
-                    Download Resume
-                </a>
             </div>
         );
     }

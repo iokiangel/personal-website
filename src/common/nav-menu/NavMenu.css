@@ -15,3 +15,8 @@
 .hover-override:hover {
     background-color: none !important;
 }
+
+.dropdown-icon {
+    stroke: black;
+    z-index: 500;
+}
