@@ -21,7 +21,7 @@ class Resume extends React.Component {
 
         return (
             <div className="resume">
-                <a className="download-link" href="../../../static/resume/JoshuaLopesResume.pdf" download>
+                <a className="download-link" href={resume} download="JoshuaLopesResume" target="_blank">
                     Download Resume
                 </a>
                 <Document

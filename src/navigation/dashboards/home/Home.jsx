@@ -1,6 +1,7 @@
 import React from 'react';
 import './Home.css';
 import profileIcon from '../../../static/images/profile.jpg';
+import githubIcon from '../../../static/images/GitHub-Mark-64px.png';
 
 export default class Home extends React.Component {
     render(){
@@ -8,9 +9,13 @@ export default class Home extends React.Component {
             <div className="home">
                 <img className="profile-icon" src={profileIcon} alt="error"/>
                 <div className="description">
-                    Hello My name is Joshua and I've created this website as personal project. 
-                    Currently this application is being backed using an AWS CI/CD pipeline. 
-                    Feel Free to take a look around.
+                    Hello, my name is Joshua and I've created this website as an interactive Resume to show my Full Stack Developer experience.
+                    This website was written using a Javascript library called React.
+                    My application is being hosted using AWS CloudFront and an S3 bucket as an origin.
+                    I also have an AWS CI/CD pipeline hooked up to my repo which you can check out at my Github.
+                    <a href="https://github.com/iokiangel/personal-website" target="_blank">
+                        <img className="github-icon" src={githubIcon} alt="error" />
+                    </a>
                 </div>  
             </div>
         )
