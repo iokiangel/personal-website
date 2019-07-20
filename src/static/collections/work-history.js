@@ -5,6 +5,10 @@ const rhxDescription = ['Developed, tested and debugged Mobile Applications and 
 'Assists old and new team members to approach tasks with multiple views to ensure highest quality of product',
 'Introduce new technologies to the company to ensure we adapt to constant changing times']
 
-const vertaforeDescription = ['words', 'words', 'words', 'words', 'words',]
+const vertaforeDescription = ['Worked with a team to build a scaling architecture of microservices',
+'Mentored new hires on the architecture of our services and how one would work with another',
+'Learned and grew with constantly evolving innovative technologies',
+'Helped move Vertafore forward as a competitive company in the industry.',
+'Supported my team as Scrum Master']
 
 export {rhxDescription, vertaforeDescription};
