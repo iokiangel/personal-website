@@ -2,8 +2,14 @@
 
 .resume {
     z-index: 2;
-    position: fixed;
-    margin-top: 5rem;
+    position: absolute;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.resume-image {
+    max-width: 35.5rem;
 }
 
 .download-link {
@@ -12,9 +18,14 @@
     color: lightblue;
 }
 
+.download-link:hover {
+    color: lightgray;
+}
+
 @media only screen and (max-width: 37.5rem) {
     .resume {
-        left: 0;
+        max-width: 100%;
+        margin-top: 3.7rem;
         overflow: scroll;
     }
 }

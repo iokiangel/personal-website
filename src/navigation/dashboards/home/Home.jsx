@@ -3,8 +3,7 @@ import './Home.css';
 import profileIcon from '../../../static/images/profile.jpg';
 import githubIcon from '../../../static/images/GitHub-Mark-64px.png';
 
-export default class Home extends React.Component {
-    render(){
+export default function Home(){
         return(
             <div className="home">
                 <img className="profile-icon" src={profileIcon} alt="error"/>
@@ -19,5 +18,4 @@ export default class Home extends React.Component {
                 </div>  
             </div>
         )
-    }
 }
