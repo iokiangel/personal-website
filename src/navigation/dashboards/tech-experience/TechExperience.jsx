@@ -1,5 +1,6 @@
 import React from 'react';
 import {languages, librariesAndFrameworkds, devOps, certs} from '../../../static/collections/tech-experience.js';
+import './TechExperience.css'
 
 export default function TechExperience(){
         return(

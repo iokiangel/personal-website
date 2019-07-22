@@ -5,6 +5,7 @@ import NavigationBar from "./navigation/NavigationBar";
 import Resume from './navigation/dashboards/resume/Resume';
 import Home from './navigation/dashboards/home/Home';
 import WorkHistory from './navigation/dashboards/work-history/WorkHistory'
+import TechExperience from "./navigation/dashboards/tech-experience/TechExperience";
 
 class App extends React.PureComponent {
   constructor(props) {
@@ -28,6 +29,7 @@ class App extends React.PureComponent {
         {this.state.activePage === 'Home' && <Home />}
         {this.state.activePage === 'Resume' && <Resume />}
         {this.state.activePage === 'Work' && <WorkHistory />}
+        {this.state.activePage === 'Tech' && <TechExperience />}
       </div>
     );
   }

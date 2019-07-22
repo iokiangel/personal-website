@@ -1,0 +1,12 @@
+
+.tech-content {
+    z-index: 2;
+    position: fixed;
+    background-color: white;
+    width: 60rem;
+    max-height: 100%;
+    max-width: 100%;
+    border: .2rem solid lightblue;
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
